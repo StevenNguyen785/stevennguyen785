@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body {
+font-family: "Source Sans Pro", "Arial", "Gill Sans", "Gill Sans MT", "DejaVu Sans Condensed", sans-serif;
+/* 	font-family: 'Dosis', sans-serif; */
+/* 	font-family: Arial, Helvetica, sans-serif; */
+	font-style: normal;
+	height: 100%;
+	margin: 0px;
+	color: #FFFFFF;
+	background-color: #222;
+}
+
+.container {padding-bottom:40px; padding-top:4px;border-bottom: 1px solid #333;}
+h1.welcome {font-size:56px; padding-bottom: 0px;}
+h1 {font-size: 60px; color: #6fc000; text-align: center; padding: 40px 0px 30px 0px;}
+h2 {font-size: 24px; color: #999; padding: 10px 0 10px 0;}
+h2.artist {color: #4A90E2;font-size: 30px; font-family: "Source Sans Pro","Verdana", sans-serif;text-align: center; text-transform: uppercase;letter-spacing: 0.25em; padding: 20px 0px;}
+h2.vr {font-size: 20px; font-family: "Source Sans Pro","Verdana", sans-serif;color: #4A90E2;text-align: center; text-transform: uppercase;letter-spacing: 0.2em; padding: 20px 0px;}
+span.title {font-size: 24px; color: #fff; padding: 0;}
+div.copyright {font-size: 16px; color: #666;margin: 30px 0; text-align: center;}
+p.statement {font-size: 24px; color: #999; padding: 50px 0 10px 0; text-align: left;}
+p.contact {font-size: 30px; color: #999; padding: 50px 0 10px 0; text-align: center;}
+
+hr {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 1px;
+border: 1px solid #333;
+}
+
+ /* unvisited link */
+a.contact:link {
+  color: #0077c2;
+}
+
+/* visited link */
+a.contact:visited {
+  color: #0077c2;
+}
+
+/* mouse over link */
+a.contact:hover {
+  color: #008de5;
+text-decoration: none;
+}
+
+/* selected link */
+a.contact:active {
+  color: #0077c2;
+}
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{ color: #fff;  }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
+/* ============ desktop view .end// ============ */
