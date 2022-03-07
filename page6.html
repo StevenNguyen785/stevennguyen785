@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Artist Self-Portrait</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="main.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="main_nav">
+<ul class="navbar-nav">
+	<li class="nav-item"> <a class="nav-link" href="index.html">Home </a> </li>
+	<li class="nav-item"><a class="nav-link" href="artist-statement.html"> Artist Statement </a></li>
+	<li class="nav-item dropdown">
+	   <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Image Gallery</a>
+	    <ul class="dropdown-menu">
+		    <li><a class="dropdown-item" href="page1.html">Glitch Image</a></li>
+		    <li><a class="dropdown-item" href="page2.html">Meme Art</a></li>
+	    </ul>
+	</li>
+	<li class="nav-item dropdown">
+	   <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">3D Gallery</a>
+	    <ul class="dropdown-menu">
+		    <li><a class="dropdown-item" href="page11.html">Maya 3D Animation</a></li>
+			<li><a class="dropdown-item" href="page3.html">MineCraft Art</a></li>
+			<li><a class="dropdown-item" href="page4.html">3D Print Project</a></li>
+	    </ul>
+	</li>
+	<li class="nav-item dropdown">
+	   <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Net Art</a>
+	    <ul class="dropdown-menu">
+		    <li><a class="dropdown-item" href="page5.html">Net Art</a></li>
+		    <li><a class="dropdown-item" href="page8.html">Twine Program Project</a></li>
+	    </ul>
+	</li>
+	<li class="nav-item active dropdown">
+	   <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">P5 Javascript</a>
+	    <ul class="dropdown-menu">
+		    <li><a class="dropdown-item" href="page6.html">Artist Self Portrait</a></li>
+		    <li><a class="dropdown-item" href="page7.html">DIY Photohop</a></li>
+			<li><a class="dropdown-item" href="page12.html">P5 Randomizer Project</a></li>
+	    </ul>
+	</li>
+	<li class="nav-item dropdown">
+	   <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Video Gallery</a>
+	    <ul class="dropdown-menu">
+		    <li><a class="dropdown-item" href="page9.html">After Effects Project</a></li>
+		    <li><a class="dropdown-item" href="page10.html">VR into Video Project</a></li>
+	    </ul>
+	</li>
+    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+</ul>
+  </div> <!-- navbar-collapse.// -->
+</nav>
+   <div class="container">
+	  <h1>Artist Self-Portrait</h1>
+	  <div style="padding:0 0px 30px 0px"><img src="SelfPortrait.jpg" class="mx-auto d-block" alt="Selt Portrait" width="100%"></div>
+	 <h2>Title: <span class="title">Steven's Self Portrait</span></h2>
+     <h2>Dimension: <span class="title">1200x1200</span></h2>
+     <h2>Medium: <span class="title">Processor Software P5 editor</span></h2>
+
+    <h2>Brief Artist Statement: <span class="title">Besides creating an avatar of myself through certain video games or other software applications which gives a person an option to create an avatar, I always imagined how an avatar or a self portrait would look like through the use of p5 Javascript.  Wearing a blue hat and green shirt, I believe this self portrait is a good representation of myself and who I am. </span></h2>
+    <h2>The code for the Portrait: <span class="title">
+      function setup() {
+      createCanvas(600, 600);
+      }
+
+      function draw() {
+      background(228, 216, 116);
+
+      fill(46, 212, 118); // Shirt Color
+      quad(100, 600, 500, 600, 460, 475, 130, 475);
+
+      fill(249, 237, 206); // Neck Color
+      square(262, 400, 75, 20);
+
+      fill(249, 237, 206); // Face Color
+      ellipse(300, 300, 180, 270);
+
+      fill(0,0,0,) // Right Eyebrow
+      rect(235, 230, 40, 10);
+
+      fill(0,0,0,) // Left Eyebrow
+      rect(325, 230, 40, 10);
+
+      fill(255, 255, 255) // Right Eyebrow
+      ellipse(255, 265, 50, 30);
+
+      fill(255, 255, 255) // Left Eyebrow
+      ellipse(340, 265, 50, 30);
+
+      fill(145, 106, 77) // Right Pupil
+      ellipse(255, 265, 20, 20);
+
+      fill(145, 106, 77) // Left Pupil
+      ellipse(340, 265, 20, 20);
+
+      fill(249, 237, 206) // Nose
+      arc(300, 320, 60, 60, 0, PI + QUARTER_PI, OPEN);
+
+      fill(229, 168, 121) // Mouth
+      arc(300, 375, 60, 60, 0, PI + QUARTER_PI, CHORD);
+
+      fill(208, 148, 103) // Lips
+      line (330, 375, 270, 375);
+
+      fill(0, 0, 0) // Hair
+      triangle(250, 150, 200, 275, 400, 200);
+
+      fill(78, 62, 226) // Hat 1
+      rect(200, 120, 200, 100, 35, 35, 0, 0);
+
+      fill(78,62,226) // Hat 2
+      rect(400, 200, 100, 20);
+
+      fill(0,0,0) // Hat Line 1
+      rect(300, 120, 5, 100);
+
+      fill(0,0,0) // Hat Line 2
+      rect(250, 120, 5, 100);
+
+      fill(0,0,0) // Hat Line 3
+      rect(350, 120, 5, 100);
+
+      fill(0,0,0) // Hat Line 4
+      rect(215, 125, 5, 95);
+
+      fill(0,0,0) // Hat Line 5
+      rect(380, 125, 5, 95);
+
+      fill(0,0,0) // Hat Line 6
+      rect(330, 120, 5, 100);
+
+      fill(0,0,0) // Hat Line 7
+      rect(275, 120, 5, 100);
+
+      }
+		</span></h2>
+  </div>
+ <div class="copyright">© Copyright 2022.</div>
+</body>
+</html>
